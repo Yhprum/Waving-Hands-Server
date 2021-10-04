@@ -1,0 +1,168 @@
+{
+  "Shield": {
+    "sequence": "P",
+    "type": "protection"
+  },
+  "Remove Enchantment": {
+    "sequence": "PDWP",
+    "type": "protection"
+  },
+  "Magic Mirror": {
+    "sequence": "cw",
+    "type": "protection"
+  },
+  "Counter Spell": {
+    "sequence": [
+      "WPP",
+      "WWS"
+    ],
+    "type": "protection"
+  },
+  "Dispel Magic": {
+    "sequence": "cDPW",
+    "type": "protection"
+  },
+  "Cure Light Wounds": {
+    "sequence": "DFW",
+    "type": "protection"
+  },
+  "Cure Heavy Wounds": {
+    "sequence": "DFPW",
+    "type": "protection"
+  },
+  "Summon Goblin": {
+    "sequence": "SFW",
+    "type": "summoning"
+  },
+  "Summon Ogre": {
+    "sequence": "PSFW",
+    "type": "summoning"
+  },
+  "Summon Troll": {
+    "sequence": "FPSFW",
+    "type": "summoning"
+  },
+  "Summon Giant": {
+    "sequence": "WFPSFW",
+    "type": "summoning"
+  },
+  "Summon Elemental": {
+    "sequence": " cSWWS",
+    "type": "summoning"
+  },
+  "Missile": {
+    "sequence": "SD",
+    "type": "damaging"
+  },
+  "Finger of Death": {
+    "sequence": "PWPFSSSD",
+    "type": "damaging"
+  },
+  "Lightning Bolt": {
+    "sequence": [
+      "DFFDD",
+      "WDDc"
+    ],
+    "type": "damaging"
+  },
+  "Cause Light Wounds": {
+    "sequence": "WFP",
+    "type": "damaging"
+  },
+  "Cause Heavy Wounds": {
+    "sequence": "WPFD",
+    "type": "damaging"
+  },
+  "Fireball": {
+    "sequence": "FSSDD",
+    "type": "damaging"
+  },
+  "Fire Storm": {
+    "sequence": "SWWc",
+    "type": "damaging"
+  },
+  "Ice Storm": {
+    "sequence": "WSSc",
+    "type": "damaging"
+  },
+  "Amnesia": {
+    "sequence": "DPP",
+    "type": "enchantment"
+  },
+  "Confusion": {
+    "sequence": "DSF",
+    "type": "enchantment"
+  },
+  "Charm Person": {
+    "sequence": "PSDF",
+    "type": "enchantment"
+  },
+  "Charm Monster": {
+    "sequence": "PSDD",
+    "type": "enchantment"
+  },
+  "Paralysis": {
+    "sequence": "FFF",
+    "type": "enchantment"
+  },
+  "Fear": {
+    "sequence": "SWD",
+    "type": "enchantment"
+  },
+  "Anti-Spell": {
+    "sequence": "SPF",
+    "type": "enchantment"
+  },
+  "Protection from Evil": {
+    "sequence": "WWP",
+    "type": "enchantment"
+  },
+  "Resist Heat": {
+    "sequence": "WWFP",
+    "type": "enchantment"
+  },
+  "Resist Cold": {
+    "sequence": "SSFP",
+    "type": "enchantment"
+  },
+  "Disease": {
+    "sequence": "DSFFFC",
+    "type": "enchantment"
+  },
+  "Poison": {
+    "sequence": "DWWFWD",
+    "type": "enchantment"
+  },
+  "Blindness": {
+    "sequence": "DWFFd",
+    "type": "enchantment"
+  },
+  "Invisibility": {
+    "sequence": "PPws",
+    "type": "enchantment"
+  },
+  "Haste": {
+    "sequence": "PWPWWC",
+    "type": "enchantment"
+  },
+  "Time Stop": {
+    "sequence": "SPPC",
+    "type": "enchantment"
+  },
+  "Delayed Effect": {
+    "sequence": "DWSSSP",
+    "type": "enchantment"
+  },
+  "Permanency": {
+    "sequence": "SPFPSDW",
+    "type": "enchantment"
+  },
+  "Surrender": {
+    "sequence": "p",
+    "type": "enchantment"
+  },
+  "Stab": {
+    "sequence": ">",
+    "type": "enchantment"
+  }
+}
