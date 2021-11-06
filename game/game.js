@@ -1,9 +1,12 @@
 const spells = require("../data/spells");
 
 function calculateState(state) {
-  let moves = state.moves;
+  let moves = Object.values(state.moves).flat();
   // TODO: check if moves are legal
-  let protections = {};
+  let protections = {
+    "you": [],
+    "enemy": []
+  };
   let dispelMagic = false;
   Object.values(moves).sort().forEach(move => {
     if (dispelMagic) return;
@@ -13,7 +16,7 @@ function calculateState(state) {
     if (protections[move.target].includes("Magic Mirror")) {
       move.target = move.caster;
     }
-    switch (move.name) {
+    switch (move.spell) {
       // Protection
       case "Shield":
       case "Magic Mirror":
@@ -122,6 +125,7 @@ function calculateState(state) {
         break;
     }
   });
+  return state;
 }
 
 const badEnchantments = item => ["Amnesia", "Confusion", "Charm Person", "Charm Monster", "Paralysis", "Fear"].includes(item);
