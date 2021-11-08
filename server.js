@@ -1,6 +1,8 @@
 const { Server } = require("socket.io");
 const { calculateState } = require("./game/game");
+const { Room } = require("./game/room");
 
+const games = {};
 // Example game state for now
 const game = {
   history: {
@@ -19,8 +21,7 @@ const game = {
       summons: [{ type: "Goblin", hp: 2 }]
     }
   },
-  moves: {},
-
+  moves: {}
 };
 
 const io = new Server({
@@ -32,6 +33,25 @@ const io = new Server({
 
 io.on("connection", socket => {
   socket.name = "you";
+
+  socket.on("create game", () => {
+    games[socket.id] = new Room(socket.id, socket.id);
+    io.emit("games", games);
+  });
+
+  socket.on("join game", gameId => {
+    socket.join(gameId);
+    games[gameId].join(socket.id);
+    io.emit("games", games);
+  });
+
+  socket.on("leave game", gameId => {
+    socket.leave(gameId);
+    games[gameId].leave(socket.id);
+    if(games[gameId].players.length === 0) delete games[gameId];
+    io.emit("games", games);
+  });
+
   socket.on("submit move", move => {
     console.log(move);
 
